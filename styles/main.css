@@ -1,3 +1,174 @@
+.roster {
+    position: absolute;
+    bottom: 0px;
+}
+
+#splash1 {
+     z-index: -100;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 370px;
+    height: 25vh;
+    width: 25vh;
+    background-image: url("./images/inksplat1.png");
+
+}
+
+#splash2 {
+     z-index: -100;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 300px;
+    margin-left: 430px;
+    height: 25vh;
+    width: 25vh;
+    background-image: url("./images/inksplat2.png")
+}
+
+#splash3 {
+     z-index: -100;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 250px;
+    margin-left: 470px;
+    height: 45vh;
+    width: 65vh;
+    background-image: url("./images/inksplat3.png")
+}
+
+.playerIcon {
+    height: 10vh;
+    width: auto;
+    opacity: 0;
+    animation-iteration-count: 1;
+    -webkit-animation: playerIcon 1s;
+    -moz-animation: playerIcon 1s;
+    animation: playerIcon 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes playerIcon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes playerIcon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes playerIcon {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.playerPicture {
+    z-index:-10;
+    opacity: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50vw;
+    position: absolute;
+}
+
+.playerName {
+    top: -100vw;
+    height: 100vh;
+    width: 14vw;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.playerName2 {
+    top: 90vh;
+    right:-100vw;
+    height: 10vh;
+    width: 30vw;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wholeScreen {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    filter: contrast(180%);
+    background-image: url("./images/Stroke.png");
+    background-repeat: repeat-y;
+    -webkit-animation: bgStroke 1s ease;
+    animation: bgStroke 1s ease;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes bgStroke {
+    0% {
+        height: 0vh;
+    }
+    100% {
+        height: 100vh;
+    }
+}
+
+@-moz-keyframes bgStroke {
+    0% {
+        height: 0vh;
+    }
+    100% {
+        height: 100vh;
+    }
+}
+
+@keyframes bgStroke {
+    0% {
+        height: 0vh;
+    }
+    100% {
+        height: 100vh;
+    }
+}
+
+body {
+    margin: 0px;
+}
+
+
+/*
+
+
+
+
 #lineInfo {
     border-bottom: 2px solid red;
     border-right: 2px solid red;
@@ -35,25 +206,7 @@
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
-.hoverOdell {
-    border-color: transparent;
-    -webkit-animation: borderDraw 1.5s;
-    -moz-animation: borderDraw 1.5s;
-    animation: borderDraw 1.5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-delay: 10s;
-    animation-delay: 10s;
-}
 
-.odellCircle{
-    height: 10vh;
-    width: 10vh;
-    margin-left: 1vw;
-    margin-top: 80vh;
-}
 
 .hoverOver:hover + div {
     display: inline;
@@ -70,328 +223,5 @@
 }
 
 
-.hoverOdell:hover {
-    -webkit-animation: borderDraw 1.5s;
-    -moz-animation: borderDraw 1.5s;
-    animation: borderDraw 1.5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
 
-.EliRing {
-    height: 10vh;
-    width: 10vh;
-    margin-left: 65vw;
-    margin-top: 27vh;
-}
-
-.lineForRing {
-    z-index: 1;
-    position: absolute;
-    margin-left: 20vw;
-    margin-top: 30vh;
-    height: 3vh;
-    -webkit-animation: ringDraw .5s;
-    -moz-animation: ringDraw .5s;
-    animation: ringDraw .5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes ringDraw {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 43vw;
-    }
-}
-
-.RingInfo {
-    z-index: 10;
-    background-color: white;
-    margin-left: 6vw;
-    margin-top: 27vh;
-    position: absolute;
-}
-
-.RingText {
-    margin-right: 2vw;
-}
-
-@-webkit-keyframes borderDraw {
-    0% {
-        border-top-color: red;
-        transition: width 1s ease-in-out;
-        transform: rotate(90deg);
-    }
-    25% {
-        border-top-color: red;
-        transition: width 1s ease-in-out;
-        transform: rotate(180deg);
-    }
-    50% {
-        border-left-color: red;
-        transition: height 1s ease-in-out;
-        transform: rotate(270deg);
-    }
-    75% {
-        border-bottom-color: red;
-        transition: width 1s ease-in-out;
-        transform: rotate(360deg);
-    }
-    99% {
-        border-right-color: red;
-        transition: width 1s ease-in-out;
-        transform: rotate(0deg);
-    }
-}
-
-.everythingRing {
-    display: none;
-}
-
-.EliHead {
-    height: 20vh;
-    width: 20vh;
-    margin-left: 68vw;
-    margin-top: 1vh;
-}
-
-.lineForHead {
-    z-index: -20;
-    position: absolute;
-    margin-left: 30vw;
-    margin-top: 4vw;
-    height: 3vh;
-    width: 42vw;
-    -webkit-animation: ringDraw .5s;
-    -moz-animation: ringDraw .5s;
-    animation: ringDraw .5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-.IQInfo {
-    z-index: 10;
-    background-color: white;
-    margin-left: 10vw;
-    margin-top: 4.5vw;
-    position: absolute;
-}
-
-.IQText {
-    margin-right: 2vw;
-}
-
-.everythingIQ {
-    display: none;
-}
-
-.EliArm {
-    height: 80px;
-    width: 80px;
-    margin-left: 55vw;
-    margin-top: 29vh;
-}
-
-.lineForArm {
-    z-index: -20;
-    position: absolute;
-    margin-left: 23.5vw;
-    margin-top: 35vh;
-    height: 3vh;
-    width: 35vw;
-    -webkit-animation: armDraw .5s;
-    -moz-animation: armDraw .5s;
-    animation: armDraw .5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes armDraw {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 35vw;
-    }
-}
-
-.ArmInfo {
-    z-index: 10;
-    background: white;
-    width: 20vw;
-    margin-left: 5vw;
-    margin-top: 35vh;
-    position: absolute;
-}
-
-.ArmText {
-    margin-right: 5vw;
-}
-
-.everythingArm {
-    display: none;
-}
-
-.Eli {
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    -webkit-animation: eli 2.7s;
-    -moz-animation: eli 2.7s;
-    -webkit-animation-delay: 2s;
-    animation: eli 2.7s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-transition: opacity 2s ease-in-out;
-    -moz-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-    transition: opacity 2s ease-in-out;
-}
-
-@-webkit-keyframes eli {
-    0% {
-        left: 0px;
-        opacity: 0;
-    }
-    100% {
-        left: 55vw;
-        opacity: 1;
-        position: absolute;
-    }
-}
-
-@-moz-keyframes eli {
-    0% {
-        left: 0px;
-        opacity: 0;
-    }
-    100% {
-        left: 55vw;
-        opacity: 1;
-        position: absolute;
-    }
-}
-
-@keyframes eli {
-    0% {
-        left: 0px;
-        opacity: 0;
-    }
-    100% {
-        left: 55vw;
-        opacity: 1;
-        position: absolute;
-    }
-}
-
-.EliName {
-    height: 100vh;
-    width: auto;
-    float: right;
-    position: relative;
-}
-
-.wholeScreen {
-    margin: auto;
-    z-index: 0;
-    position: relative;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    filter: contrast(150%);
-    background-image: url("./images/Stroke.png");
-    -webkit-animation: bgStroke 1s ease;
-    -webkit-animation-fill-mode: backwards;
-    animation: bgStroke 1s ease;
-}
-
-@-webkit-keyframes bgStroke {
-    0% {
-        height: 0vh;
-    }
-    100% {
-        height: 100vh;
-    }
-}
-
-@-moz-keyframes bgStroke {
-    0% {
-        height: 0vh;
-    }
-    100% {
-        height: 100vh;
-    }
-}
-
-@keyframes bgStroke {
-    0% {
-        height: 0vh;
-    }
-    100% {
-        height: 100vh;
-    }
-}
-
-body{
-    margin:0px;
-}
-
-
-.photoOdell{
-    height:20vh;
-    position: absolute;
-    opacity: 0;
-    -webkit-animation: appear 2.7s;
-    -moz-animation: appear 2.7s;
-    -webkit-animation-delay: 7s;
-    animation: appear 2.7s;
-    animation-delay: 7s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-transition: opacity 2s ease-in-out;
-    -moz-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-    transition: opacity 2s ease-in-out;
-}
-
-@-webkit-keyframes appear {
-    1% {
-        margin-top:120vh;
-        opacity: 0;
-    }
-    100% {
-        margin-top: 78vh;
-        opacity: 1;
-        position: absolute;
-    }
-}
-
-@-moz-keyframes appear {
-    0% {
-        bottom: -20vh;
-        opacity: 0;
-    }
-    100% {
-           bottom: 0vh;
-        opacity: 1;
-        position: absolute;
-    }
-}
-
-@keyframes appear {
-    0% {
-        bottom: -20vh;
-        opacity: 0;
-    }
-    100% {
-           bottom: 0vh;
-        opacity: 1;
-        position: absolute;
-    }
-}
+*/
