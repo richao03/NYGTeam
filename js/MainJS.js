@@ -12,20 +12,22 @@ $(document).ready(function() {
         //------------------------------------------START OF ELI-------------------------------------------
         //*************************************************************************************************
     $("#EliIcon").off().on('click', function() {
-        $('.playerPicture').css("background-image", "")
+        $('.playerPicture')
             .animate({ opacity: "", left: "" }, "slow")
         $('.playerName').css("background-image", "")
-            .animate({ top: "" })
+            .animate({ top: "-100vh" })
         $('.playerName2').css("background-image", "")
-            .animate({ right: "" })
+            .animate({ right: "-100vw" })
 
         if (playerClicked == undefined || playerClicked !== "EliIcon") {
-            $('.playerPicture').css("background-image", "url('./images/Eli.png')")
-                .animate({ opacity: 1, left: '55vw' }, "slow")
-            $('.playerName').css("background-image", "url('./images/name.png')")
-                .animate({ top: 0 })
-            $('.playerName2').css("background-image", "url('./images/EliName2.png')")
-                .animate({ right: 0 })
+            setTimeout(function() {
+                $('.playerPicture').css("background-image", "url('./images/Eli.png')")
+                    .animate({ opacity: 1, left: '55vw' }, "slow")
+                $('.playerName').css("background-image", "url('./images/name.png')")
+                    .animate({ top: 0 }, "slow")
+                $('.playerName2').css("background-image", "url('./images/EliName2.png')")
+                    .animate({ right: 0 }, "slow")
+            }, 400)
             $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
             $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
             $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
@@ -43,7 +45,7 @@ $(document).ready(function() {
                     $('.headInfo').next('div')
                         .css({ "margin-left": "200px", "margin-top": "30px", "border-color": "red" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
-                        console.log("hover ends")
+                    console.log("hover ends")
                 },
                 //upon  mouse leave
                 function() {
@@ -94,19 +96,22 @@ $(document).ready(function() {
     //------------------------------------------START OF ODELL-------------------------------------------
     //*************************************************************************************************
     $("#OdellIcon").off().on('click', function() {
-        $('.playerPicture').css("background-image", "")
+
+        $('.playerPicture')
             .animate({ opacity: "", left: "" }, "slow")
         $('.playerName').css("background-image", "")
-            .animate({ top: "" })
+            .animate({ top: "-100vh" }, "slow")
         $('.playerName2').css("background-image", "")
-            .animate({ right: "" })
+            .animate({ right: "-100vw"}, "slow")
         if (playerClicked == undefined || playerClicked !== "OdellIcon") {
-            $('.playerPicture').css("background-image", "url('./images/Odell.png')")
-                .animate({ opacity: 1, left: '55vw' }, "slow")
-            $('.playerName').css("background-image", "url('./images/name.png')")
-                .animate({ top: 0 })
-            $('.playerName2').css("background-image", "url('./images/EliName2.png')")
-                .animate({ right: 0 })
+            setTimeout(function() {
+                $('.playerPicture').css("background-image", "url('./images/Odell.png')")
+                    .animate({ opacity: 1, left: '55vw' }, "slow")
+                $('.playerName').css("background-image", "url('./images/Odellname.png')")
+                    .animate({ top: 0 })
+                $('.playerName2').css("background-image", "url('./images/EliName2.png')")
+                    .animate({ right: 0 })
+            }, 400)
             $("#headText").html("ODEL SHIT")
             $("#armText").html("The GOLDEN CHILD")
             $("#bodyText").html("CHAMP OF FRIENDSHIP")

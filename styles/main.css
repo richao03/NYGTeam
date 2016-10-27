@@ -1,14 +1,42 @@
-p{
-
-}
+p {}
 
 .roster {
     position: absolute;
     bottom: 0px;
 }
 
+#seal {
+
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 45vh;
+    margin-left: 0px;
+    height: 50px;
+    width: 50px;
+    background-image: url("./images/NYGseal.png");
+}
+
+#seal a {
+    height: 50px;
+    width: 50px;
+}
+
 #splash1 {
-    z-index: -100;
+    opacity: 0;
+    animation-iteration-count: 1;
+    -webkit-animation: splash .1s;
+    -moz-animation: splash .1s;
+    animation: splash 1s;
+    -webkit-animation-delay: .21s;
+    -moz-animation-delay: .21s;
+    animation-delay: .21s;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,6 +48,20 @@ p{
 }
 
 #splash2 {
+    opacity: 0;
+    animation-iteration-count: 1;
+    -webkit-animation: splash .1s;
+    -moz-animation: splash .1s;
+    animation: splash 1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    animation-delay: .31s;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     z-index: -100;
     position: absolute;
     background-size: contain;
@@ -32,6 +74,20 @@ p{
 }
 
 #splash3 {
+    opacity: 0;
+    animation-iteration-count: 1;
+    -webkit-animation: splash .1s;
+    -moz-animation: splash .1s;
+    animation: splash 1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    animation-delay: .71s;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     z-index: -100;
     position: absolute;
     background-size: contain;
@@ -43,8 +99,44 @@ p{
     background-image: url("./images/inksplat3.png")
 }
 
+@-webkit-keyframes splash {
+    1% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes splash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes splash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .playerIcon {
-    cursor:pointer;
+    cursor: pointer;
     height: 10vh;
     width: auto;
     opacity: 0;
@@ -52,9 +144,9 @@ p{
     -webkit-animation: playerIcon 1s;
     -moz-animation: playerIcon 1s;
     animation: playerIcon 1s;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+    animation-delay: 2.7s;
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
     transition: opacity 1s ease-in;
@@ -102,10 +194,10 @@ p{
     position: absolute;
 }
 
-
-
-.armInfo, .headInfo, .bodyInfo {
-    border-width:10px;
+.armInfo,
+.headInfo,
+.bodyInfo {
+    border-width: 10px;
     display: inline-block;
     border-style: dotted;
     border-color: transparent;
@@ -113,7 +205,6 @@ p{
     z-index: 10;
     position: absolute;
 }
-
 
 .playerName {
     z-index: -100;
@@ -147,8 +238,11 @@ p{
     filter: contrast(180%);
     background-image: url("./images/Stroke.png");
     background-repeat: repeat-y;
-    -webkit-animation: bgStroke 1s ease;
-    animation: bgStroke 1s ease;
+    -webkit-animation: bgStroke 2s ease;
+    animation: bgStroke 2s ease;
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay: 1.0s;
+    animation-delay: 1.0s;
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
 }
@@ -186,9 +280,9 @@ body {
 
 #lineInfo {
     border-width: 0px;
-    position:absolute;
+    position: absolute;
     z-index: -20;
-    border-width:0px;
+    border-width: 0px;
     border-bottom: solid transparent;
     border-right: solid transparent;
     -moz-transform: skew(-45deg, 0deg);
@@ -196,13 +290,13 @@ body {
     transform: skew(-45deg, 0deg);
 }
 
-.textBox{
-    margin-left:-10px;
-    display:none;
-    position:relative;
-    float:left;
+.textBox {
+    margin-left: -10px;
+    display: none;
+    position: relative;
+    float: left;
     border-bottom: 2px solid red;
-    border-right:2px solid red;
+    border-right: 2px solid red;
 }
 
 .text {
@@ -234,11 +328,10 @@ body {
     -webkit-animation: borderDraw 1.5s;
     -moz-animation: borderDraw 1.5s;
     animation: borderDraw 1.5s;
-        animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
-        -webkit-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-
 }
 
 @-webkit-keyframes borderDraw {
