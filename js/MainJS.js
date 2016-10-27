@@ -52,9 +52,9 @@ $(document).ready(function() {
         $('.armInfo').hover(
             function() {
                 $('.armTextBox').css({ "display": "block", "margin-left": "-200px" })
-                $("#armText").css({ "display": "inline-block", "left": "-900px", "width": "200px" })
-                $('.armInfo').next('div').css({ "margin-left": "250px", "margin-top": "277px", "border-color": "red" })
-                $('.armInfo').next('div').animate({ "left": "-600px", "border-width": "2px", "width": "350px", "height": "40px" })
+                $("#armText").css({ "display": "inline-block", "left": "-600px", "width": "200px" })
+                $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "277px", "border-color": "red" })
+                $('.armInfo').next('div').animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
             },
             function() {
                 $("#armText").css("display", "none")
