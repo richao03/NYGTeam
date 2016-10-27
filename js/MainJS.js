@@ -112,7 +112,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.playerPicture').css({ "background-image": "url('./images/Odell.png')", "background-size": "100% 100%" })
                     .animate({ opacity: 1, left: '50vw' }, "slow")
-                $('.playerName').css("background-image", "url('./images/Odellname.png')")
+                $('.playerName').css("background-image", "url('./images/OdellName.png')")
                     .animate({ top: 0 })
                 $('.playerName2').css("background-image", "url('./images/OdellName2.png')")
                     .animate({ right: 0 })
@@ -199,7 +199,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.playerPicture').css({ "background-image": "url('./images/Cruz.png')" })
                     .animate({ opacity: 1, left: '55vw' }, "slow")
-                $('.playerName').css("background-image", "url('./images/Cruzname.png')")
+                $('.playerName').css("background-image", "url('./images/CruzName.png')")
                     .animate({ top: 0 })
                 $('.playerName2').css("background-image", "url('./images/CruzName2.png')")
                     .animate({ right: 0 })
