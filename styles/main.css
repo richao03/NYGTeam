@@ -218,7 +218,7 @@ p {}
 }
 
 .playerName2 {
-    z-index: 100;
+
     top: 85vh;
     right: -100vw;
     height: 15vh;
@@ -316,8 +316,8 @@ body {
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
 }
 
 .hoverOver:hover + div {
