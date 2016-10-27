@@ -92,9 +92,9 @@ p {}
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 320px;
-    margin-left: 450px;
-    height: 355px;
+    margin-top: 370px;
+    margin-left: 690px;
+    height: 300px;
     width: 650px;
     background-image: url("./images/inksplat3.png")
 }
@@ -183,13 +183,12 @@ p {}
 }
 
 .playerPicture {
-    overflow-y:hidden;
     float: right;
     opacity: 0;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 600px;
-    height: 100vh;
+    height: 650px;
     width: 500px;
     min-width: 500px;
     position: absolute;
