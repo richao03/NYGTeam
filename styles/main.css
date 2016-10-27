@@ -1,3 +1,7 @@
+p{
+
+}
+
 .roster {
     position: absolute;
     bottom: 0px;
@@ -40,6 +44,7 @@
 }
 
 .playerIcon {
+    cursor:pointer;
     height: 10vh;
     width: auto;
     opacity: 0;
@@ -97,17 +102,9 @@
     position: absolute;
 }
 
-.headInfo {
-    border-width:10px;
-    display: inline-block;
-    border-style: dotted;
-    border-color: transparent;
-    border-radius: 100%;
-    z-index: 10;
-    position: absolute;
-}
 
-.armInfo {
+
+.armInfo, .headInfo, .bodyInfo {
     border-width:10px;
     display: inline-block;
     border-style: dotted;
@@ -209,7 +206,10 @@ body {
 }
 
 .text {
+
+float:left;
     color: black;
+
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     -moz-transform: skew(45deg, 0deg);
     -webkit-transform: skew(45deg, 0deg);
