@@ -4,39 +4,38 @@
 }
 
 #splash1 {
-     z-index: -100;
+    z-index: -100;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 30px;
-    margin-left: 370px;
-    height: 25vh;
-    width: 25vh;
+    margin-top: -10px;
+    margin-left: 270px;
+    height: 250px;
+    width: 250px;
     background-image: url("./images/inksplat1.png");
-
 }
 
 #splash2 {
-     z-index: -100;
+    z-index: -100;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 300px;
-    margin-left: 430px;
-    height: 25vh;
-    width: 25vh;
+    margin-top: 240px;
+    margin-left: 400px;
+    height: 250px;
+    width: 250px;
     background-image: url("./images/inksplat2.png")
 }
 
 #splash3 {
-     z-index: -100;
+    z-index: -100;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 250px;
-    margin-left: 470px;
-    height: 45vh;
-    width: 65vh;
+    margin-top: 320px;
+    margin-left: 440px;
+    height: 450px;
+    width: 650px;
     background-image: url("./images/inksplat3.png")
 }
 
@@ -87,16 +86,40 @@
 }
 
 .playerPicture {
-    z-index:-10;
+    float: right;
     opacity: 0;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 50vw;
+    min-height: 600px;
+    height: 700px;
+    width: 500px;
+    min-width: 500px;
     position: absolute;
 }
 
+.headInfo {
+    border-width:10px;
+    display: inline-block;
+    border-style: dotted;
+    border-color: transparent;
+    border-radius: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.armInfo {
+    border-width:10px;
+    display: inline-block;
+    border-style: dotted;
+    border-color: transparent;
+    border-radius: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+
 .playerName {
+    z-index: -100;
     top: -100vw;
     height: 100vh;
     width: 14vw;
@@ -107,9 +130,10 @@
 }
 
 .playerName2 {
-    top: 90vh;
-    right:-100vw;
-    height: 10vh;
+    z-index: 100;
+    top: 85vh;
+    right: -100vw;
+    height: 15vh;
     width: 30vw;
     float: right;
     background-size: contain;
@@ -163,32 +187,30 @@ body {
     margin: 0px;
 }
 
-
-/*
-
-
-
-
 #lineInfo {
-    border-bottom: 2px solid red;
-    border-right: 2px solid red;
+    border-width: 0px;
+    position:absolute;
+    z-index: -20;
+    border-width:0px;
+    border-bottom: solid transparent;
+    border-right: solid transparent;
     -moz-transform: skew(-45deg, 0deg);
     -webkit-transform: skew(-45deg, 0deg);
     transform: skew(-45deg, 0deg);
 }
 
-
-#hoverTarget {
-    border-style: dotted;
-    border-color: transparent;
-    border-radius: 100%;
-    z-index: 10;
-    position: absolute;
+.textBox{
+    margin-left:-10px;
+    display:none;
+    position:relative;
+    float:left;
+    border-bottom: 2px solid red;
+    border-right:2px solid red;
 }
 
-#text {
-    display: inline-block;
+.text {
     color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     -moz-transform: skew(45deg, 0deg);
     -webkit-transform: skew(45deg, 0deg);
     transform: skew(45deg, 0deg);
@@ -207,7 +229,6 @@ body {
     animation-delay: 3s;
 }
 
-
 .hoverOver:hover + div {
     display: inline;
 }
@@ -216,12 +237,37 @@ body {
     -webkit-animation: borderDraw 1.5s;
     -moz-animation: borderDraw 1.5s;
     animation: borderDraw 1.5s;
-    animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+
 }
 
-
-
-*/
+@-webkit-keyframes borderDraw {
+    0% {
+        border-top-color: red;
+        transition: width 1s ease-in-out;
+        transform: rotate(90deg);
+    }
+    25% {
+        border-top-color: red;
+        transition: width 1s ease-in-out;
+        transform: rotate(180deg);
+    }
+    50% {
+        border-left-color: red;
+        transition: height 1s ease-in-out;
+        transform: rotate(270deg);
+    }
+    75% {
+        border-bottom-color: red;
+        transition: width 1s ease-in-out;
+        transform: rotate(360deg);
+    }
+    99% {
+        border-right-color: red;
+        transition: width 1s ease-in-out;
+        transform: rotate(0deg);
+    }
+}
