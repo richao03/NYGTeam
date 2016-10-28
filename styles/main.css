@@ -2,7 +2,7 @@ p {}
 
 .roster {
     position: absolute;
-    bottom: 0px;
+    bottom:0px;
 }
 
 #seal {
@@ -94,8 +94,8 @@ p {}
     background-repeat: no-repeat;
     margin-top: 370px;
     margin-left: 690px;
-    height: 300px;
-    width: 650px;
+    height: 280px;
+    width: 630px;
     background-image: url("./images/inksplat3.png")
 }
 
@@ -188,7 +188,7 @@ p {}
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 600px;
-    height: 685px;
+    height: 680px;
     width: 500px;
     min-width: 500px;
     position: absolute;
@@ -220,7 +220,7 @@ p {}
 }
 
 .playerName2 {
-
+    display:none;
     top: 85vh;
     right: -100vw;
     height: 15vh;
@@ -237,7 +237,6 @@ p {}
     top: 0;
     width: 100vw;
     height: 100vh;
-
     background-image: url("./images/Stroke.png");
     background-repeat: repeat-y;
     -webkit-animation: bgStroke 2s ease;
