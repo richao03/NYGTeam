@@ -188,7 +188,7 @@ p {}
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 600px;
-    height: 650px;
+    height: 685px;
     width: 500px;
     min-width: 500px;
     position: absolute;
@@ -197,6 +197,8 @@ p {}
 .armInfo,
 .headInfo,
 .bodyInfo {
+    height:100px;
+    width:100px;
     border-width: 10px;
     display: inline-block;
     border-style: dotted;
@@ -235,7 +237,7 @@ p {}
     top: 0;
     width: 100vw;
     height: 100vh;
-    filter: contrast(180%);
+
     background-image: url("./images/Stroke.png");
     background-repeat: repeat-y;
     -webkit-animation: bgStroke 2s ease;
@@ -300,6 +302,7 @@ body {
 }
 
 .text {
+    display:inline-block;
     color: black;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     -moz-transform: skew(45deg, 0deg);
