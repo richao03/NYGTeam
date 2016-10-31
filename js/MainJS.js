@@ -3,7 +3,7 @@ $(document).ready(function() {
     var firstClick = function(id) {
         playerSelected = id.slice(0, id.length - 4)
         $('.headInfo, .armInfo, .bodyInfo').removeClass("hoverOver")
-        $('.playerPicture').css("background-size", "")
+        $('.playerPicture').css({"background-size": "","margin-top":""})
             .animate({ opacity: "", left: "" }, "slow")
         $('.playerName').css("background-image", "")
             .animate({ top: "-100vh" }, "slow")
@@ -273,7 +273,7 @@ $(document).ready(function() {
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "10px", "margin-top": "37px" })
+            $('.headInfo').css({ "margin-left": "160px", "margin-top": "37px" })
                 .addClass("hoverOver")
             $('.headInfo').off().hover(
                 function() {
@@ -287,7 +287,7 @@ $(document).ready(function() {
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "35px", "margin-top": "189px" })
+            $('.armInfo').css({ "margin-left": "55px", "margin-top": "219px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
@@ -303,7 +303,7 @@ $(document).ready(function() {
                 });
 
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "430px" })
+            $('.bodyInfo').css({ "margin-left": "160px", "margin-top": "380px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -339,7 +339,7 @@ $(document).ready(function() {
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "200px", "margin-top": "10px" })
+            $('.headInfo').css({ "margin-left": "230px", "margin-top": "30px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -356,7 +356,7 @@ $(document).ready(function() {
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "-10px", "margin-top": "177px" })
+            $('.armInfo').css({ "margin-left": "50px", "margin-top": "300px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
@@ -368,7 +368,7 @@ $(document).ready(function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "160px" })
+            $('.bodyInfo').css({ "margin-left": "100px", "margin-top": "450px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -392,13 +392,14 @@ $(document).ready(function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
+             $('.playerPicture').css({ "margin-top": "55px" })
             $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
             $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
             $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "200px", "margin-top": "10px" })
+            $('.headInfo').css({ "margin-left": "0px", "margin-top": "10px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -427,7 +428,7 @@ $(document).ready(function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "160px" })
+            $('.bodyInfo').css({ "margin-left": "0px", "margin-top": "360px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -451,14 +452,14 @@ $(document).ready(function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-             $('.playerPicture').css({ "margin-bottom": "-15px" })
+             $('.playerPicture').css({ "margin-bottom": "15px" })
             $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
             $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
             $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "200px", "margin-top": "10px" })
+            $('.headInfo').css({ "margin-top": "150px" ,"margin-left": "210px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -475,7 +476,7 @@ $(document).ready(function() {
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "-10px", "margin-top": "177px" })
+            $('.armInfo').css({ "margin-left": "-30px", "margin-top": "307px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
@@ -487,7 +488,7 @@ $(document).ready(function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "160px" })
+            $('.bodyInfo').css({ "margin-left": "100px", "margin-top": "560px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -512,14 +513,14 @@ $(document).ready(function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-              $('.playerPicture').css({ "background-size": "auto 80%"})
+              $('.playerPicture').css({ "background-size": "100% auto", "margin-top":"50px"})
             $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
             $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
             $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "200px", "margin-top": "10px" })
+            $('.headInfo').css({ "margin-left": "20px", "margin-top": "160px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -536,7 +537,7 @@ $(document).ready(function() {
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "-10px", "margin-top": "177px" })
+            $('.armInfo').css({ "margin-left": "-30px", "margin-top": "507px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
@@ -548,7 +549,7 @@ $(document).ready(function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "160px" })
+            $('.bodyInfo').css({ "margin-left": "70px", "margin-top": "410px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
