@@ -237,6 +237,7 @@ p {}
     top: 0;
     width: 100vw;
     height: 100vh;
+    filter: contrast(120%);
     background-image: url("./images/Stroke.png");
     background-repeat: repeat-y;
     -webkit-animation: bgStroke 2s ease;
@@ -291,6 +292,18 @@ body {
     transform: skew(-45deg, 0deg);
 }
 
+.upLineInfo {
+    display:none;
+    border-width: 0px;
+    position: absolute;
+    z-index: -20;
+    border-width: 0px;
+    border-top: solid transparent;
+    border-right: solid transparent;
+    -moz-transform: skew(45deg, 0deg);
+    -webkit-transform: skew(45deg, 0deg);
+    transform: skew( 45deg, 0deg);
+}
 .textBox {
     margin-left: -10px;
     display: none;
@@ -307,6 +320,15 @@ body {
     -moz-transform: skew(45deg, 0deg);
     -webkit-transform: skew(45deg, 0deg);
     transform: skew(45deg, 0deg);
+}
+
+.upText {
+    display:inline-block;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    -moz-transform: skew(-45deg, 0deg);
+    -webkit-transform: skew(-45deg, 0deg);
+    transform: skew(-45deg, 0deg);
 }
 
 .hoverOver {
