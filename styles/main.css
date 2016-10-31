@@ -90,13 +90,13 @@ p {}
     animation-fill-mode: forwards;
     z-index: -100;
     position: absolute;
-    background-size: contain;
+    background-size: auto 80%;
     background-repeat: no-repeat;
-    margin-top: 370px;
-    margin-left: 690px;
+    margin-top: 420px;
+    margin-left: 650px;
     height: 280px;
     width: 630px;
-    background-image: url("./images/inksplat3.png")
+    background-image: url("./images/inksplat3.png");
 }
 
 @-webkit-keyframes splash {

@@ -33,7 +33,7 @@ $(document).ready(function() {
     }
 
     var bodyTextBoxFunc = function() {
-        $('.bodyTextBox').css({ "display": "block", "margin-left": "-200px","margin-top":"-50px" })
+        $('.bodyTextBox').css({ "display": "block", "margin-left": "-200px", "margin-top": "-50px" })
         $("#bodyText").css({ "display": "inline-block", "right": "-10px", "width": "200px" })
     }
 
@@ -49,6 +49,9 @@ $(document).ready(function() {
                 $('.playerPicture').css({ "background-position": "0 150px" })
             } else if (playerSelected === "Apple") {
                 $('.playerPicture').css({ "background-position": "0 50px" })
+            } else if (playerSelected === "Vernon") {
+                $('.playerPicture').css({ "background-position": "0 40px" })
+
             } else {
                 $('.playerPicture').css({ "background-position": "" })
             }
@@ -252,12 +255,6 @@ $(document).ready(function() {
     })
 
 
-
-
-
-
-
-
     //*************************************************************************************************
     //------------------------------------------START OF Shepard-------------------------------------------
     //*************************************************************************************************
@@ -266,9 +263,9 @@ $(document).ready(function() {
         if (playerClicked == undefined || playerClicked !== "ShepardIcon") {
             afterClick()
             $('.playerPicture').css({ "background-size": "auto 100%" })
-            $("#headText").html("Undrafted Free Agent <br/> College: U Mass <br/> 2011 Super Bowl Champion ")
-            $("#armText").html("Receptions: 280 <br/> Receiving Yards: 4,208 <br/>Receiving Touchdowns: 25")
-            $("#bodyText").html("99 yard Touchdown <br/>Tied for NFL record  <br/> 40-yd Dash: 4.46s")
+            $("#headText").html("2016 2nd Round Draft Pick <br/> College: Oklahoma ")
+            $("#armText").html("Receptions: 26 <br/> Receiving Yards: 302 <br/>Receiving Touchdowns: 2")
+            $("#bodyText").html("Vertical: 41 inches  <br/> 40-yd Dash: 4.48s")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
@@ -332,9 +329,9 @@ $(document).ready(function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-            $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
-            $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
+            $("#headText").html("2008 1st Round Draft Pick <br/>College: Tennessee State")
+            $("#armText").html("26 Career Interceptions</br> 132 Career Pass Deflections</br> 7 Defensive Touchdowns")
+            $("#bodyText").html("Vertical: 38.5 inches</br> 40-yd Dash: 4.29s")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
@@ -360,7 +357,7 @@ $(document).ready(function() {
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "215px", "margin-top": "277px", "border-color": "red","z-index":"1" })
+                    $('.armInfo').next('div').css({ "margin-left": "215px", "margin-top": "277px", "border-color": "red", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "470px", "height": "40px" })
                 },
                 function() {
@@ -391,10 +388,10 @@ $(document).ready(function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-            $('.playerPicture').css({ "margin-top": "55px" })
-            $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
-            $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
+            $("#headText").html("2015 2nd Round Draft Pick <br/>College: Tennessee State")
+            $("#armText").html("3 Career Interceptions</br> 14 Career Pass Deflections</br> 1 Defensive Touchdowns")
+            $("#bodyText").html("Vertical: 35 inches</br> 40-yd Dash: 4.33s")
+
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
@@ -452,9 +449,9 @@ $(document).ready(function() {
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
             $('.playerPicture').css({ "margin-bottom": "15px" })
-            $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302")
-            $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
+            $("#headText").html("2016 1st Round Draft Pick <br/>College: Ohio State")
+            $("#armText").html("1 Career forced fumbles</br> 3 Career Pass Deflections</br> 15 Tackles")
+            $("#bodyText").html("40-yd Dash: 4.40s</br>Vertical: 35 inches")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
@@ -492,8 +489,8 @@ $(document).ready(function() {
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "160px", "margin-top": "180px", "z-index": "50", "border-color": "red" })
-                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "340px" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "200px", "margin-top": "180px", "z-index": "50", "border-color": "red" })
+                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "220px", "height": "340px" })
                 },
                 function() {
                     afterBodyHover();
@@ -513,9 +510,9 @@ $(document).ready(function() {
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
             $('.playerPicture').css({ "background-size": "100% auto", "margin-top": "50px" })
-            $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
-            $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
+            $("#headText").html("2010 1st Round Draft Pick <br/>College: South Florida<br/>Super Bowl XLVI Champion")
+            $("#armText").html("44.5 Career Sacks</br> 9 Career Forced Fumbles</br> 340 Tackles")
+            $("#bodyText").html("40-yd Dash: 4.78s</br>Vertical: 31.5 inches")
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
@@ -541,11 +538,11 @@ $(document).ready(function() {
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "250px", "margin-top": "327px", "border-color": "red", "z-index":"1" })
+                    $('.armInfo').next('div').css({ "margin-left": "250px", "margin-top": "327px", "border-color": "red", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "550px", "height": "40px" })
                 },
                 function() {
-                    $('.armInfo').next('div').css({"z-index":""})
+                    $('.armInfo').next('div').css({ "z-index": "" })
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
@@ -573,14 +570,13 @@ $(document).ready(function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-            $('.playerPicture').css({ "background-size": "100% auto","margin-top":"40px" })
-            $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br> 10th overall passing yards of all time</br>Total Touchdowns:302</br> All time leader in </br>New York Giants</br> franchies hisotry")
-            $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
-
-            //*******************Head Info STARTS*******************************
-            //spinning red circle
-            $('.headInfo').css({ "margin-left": "180px", "margin-top": "60px" })
+            $('.playerPicture').css({ "background-size": "100% auto", "margin-top": "40px" })
+            $("#headText").html("2012 3rd Round Draft Pick <br/>College: Miami")
+            $("#armText").html("30 Career Sacks</br> 4 Career Forced Fumbles</br> 213 Tackles")
+            $("#bodyText").html("40-yd Dash: 4.64s</br>Vertical: 34.5 inches")
+                //*******************Head Info STARTS*******************************
+                //spinning red circle
+            $('.headInfo').css({ "margin-left": "180px", "margin-top": "110px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -589,7 +585,7 @@ $(document).ready(function() {
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "100px", "margin-top": "30px", "border-color": "red" })
+                        .css({ "margin-left": "100px", "margin-top": "80px", "border-color": "red" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -597,24 +593,24 @@ $(document).ready(function() {
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "60px", "margin-top": "160px" })
+            $('.armInfo').css({ "margin-left": "60px", "margin-top": "210px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "120px", "margin-top": "227px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "120px", "margin-top": "277px", "border-color": "red" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "320px", "height": "40px" })
                 },
                 function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({"margin-left": "290px", "margin-top": "377px"  })
+            $('.bodyInfo').css({ "margin-left": "290px", "margin-top": "427px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "330px", "margin-top": "330px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "330px", "margin-top": "380px", "z-index": "50", "border-color": "red" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 function() {
@@ -625,9 +621,6 @@ $(document).ready(function() {
             return
         }
     })
-
-
-
 
 
 
