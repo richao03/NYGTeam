@@ -57,10 +57,19 @@ $(document).ready(function() {
             }
             $('.playerPicture').css("background-image", "url('./images/" + playerSelected + ".png')")
                 .animate({ opacity: 1, left: '55vw' }, "slow")
-            $('.playerName').css("background-image", "url('./images/" + playerSelected + "Name.png')")
-                .animate({ top: 0 }, "slow")
-            $('.playerName2').css({ "display": "inline-block", "background-image": "url('./images/" + playerSelected + "Name2.png')" })
-                .animate({ right: 0 }, "slow")
+
+            if ($(window).width() <= 700) {
+                $('.playerName2').css({ "display": "inline-block", "background-image": "url('./images/" + playerSelected + "Name2.png')" })
+                    .animate({ left: "50vw" }, "slow")
+                $('.playerName').css("background-image", "url('./images/" + playerSelected + "Name.png')")
+                    .animate({ top: 0 }, "slow")
+
+            } else {
+                $('.playerName2').css({ "display": "inline-block", "background-image": "url('./images/" + playerSelected + "Name2.png')" })
+                    .animate({ right: 0 }, "slow")
+                $('.playerName').css("background-image", "url('./images/" + playerSelected + "Name.png')")
+                    .animate({ top: 0 }, "slow")
+            }
         }, 400)
     }
 
@@ -134,7 +143,7 @@ $(document).ready(function() {
         $('.playerPicture').css("background-size", "")
         if (playerClicked == undefined || playerClicked !== "OdellIcon") {
             afterClick()
-            $('.playerPicture').css({ "background-size": "100% 100%" })
+
             $("#headText").html("2014 1st Round 12th Pick <br/> College: LSU <br/> 2014 Offensive Rookie of <br/>the Year")
             $("#armText").html("Receptions: 227 <br/> Receiving Yards: 3,385<br/>Receiving Touchdowns: 28")
             $("#bodyText").html("40-yd Dash: 4.43<br/> Vertical: 38.5 inches <br/> Broad Jump: 9 ft 6 in")

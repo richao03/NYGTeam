@@ -223,8 +223,8 @@ p {}
     display:none;
     top: 85vh;
     right: -100vw;
-    height: 15vh;
-    width: 30vw;
+    height: 23vh;
+    width: 35vw;
     float: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -387,3 +387,14 @@ body {
 }
 
 
+@media screen and (max-width: 700px) {
+    .playerPicture {
+    height: 99vh !important;
+    width: 65vw !important;
+    }
+
+    .playerName {
+    right: -40vw;
+}
+
+}
