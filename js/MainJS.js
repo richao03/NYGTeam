@@ -178,8 +178,8 @@ $(document).ready(function() {
                 function() {
                     bodyTextBoxFunc();
                     //starting position of red line to text box
-                    $('.bodyInfo').next('div').css({ "margin-left": "130px", "margin-top": "150px", "z-index": "50", "border-color": "red" })
-                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "300px" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "320px", "margin-top": "140px", "z-index": "50", "border-color": "red" })
+                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "300px" })
                 },
                 function() {
                     afterBodyHover();

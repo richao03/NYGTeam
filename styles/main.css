@@ -55,7 +55,7 @@ p {}
     animation: splash 1s;
     -webkit-animation-delay: .1s;
     -moz-animation-delay: .1s;
-    animation-delay: .31s;
+    animation-delay: .41s;
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
     transition: opacity 1s ease-in;
@@ -66,8 +66,8 @@ p {}
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 240px;
-    margin-left: 400px;
+    margin-top: 200px;
+    margin-left: 380px;
     height: 250px;
     width: 250px;
     background-image: url("./images/inksplat2.png")
@@ -81,7 +81,7 @@ p {}
     animation: splash 1s;
     -webkit-animation-delay: .1s;
     -moz-animation-delay: .1s;
-    animation-delay: .71s;
+    animation-delay: .61s;
     -webkit-transition: opacity 1s ease-in;
     -moz-transition: opacity 1s ease-in;
     transition: opacity 1s ease-in;
@@ -93,7 +93,7 @@ p {}
     background-size: auto 80%;
     background-repeat: no-repeat;
     margin-top: 420px;
-    margin-left: 650px;
+    margin-left: 600px;
     height: 280px;
     width: 630px;
     background-image: url("./images/inksplat3.png");
