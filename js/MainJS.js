@@ -51,11 +51,11 @@ $('.remove').css({"height":0})
     var afterClick = function() {
         setTimeout(function() {
             if (playerSelected === "JPP") {
-                $('.playerPicture').css({ "background-position": "0 150px" })
+                $('.playerPicture').css({ "background-position": "0 150px", "background-size":"550px auto"})
             } else if (playerSelected === "Apple") {
                 $('.playerPicture').css({ "background-position": "0 50px" })
             } else if (playerSelected === "Vernon") {
-                $('.playerPicture').css({ "background-position": "0 40px" })
+                $('.playerPicture').css({ "background-position": "0px 0px ", "background-size":"550px auto" })
 
             } else {
                 $('.playerPicture').css({ "background-position": "" })
