@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+setTimeout(function() {
+$('.remove').css({"height":0})
+},1300)
+
+
     var firstClick = function(id) {
         playerSelected = id.slice(0, id.length - 4)
         $('.headInfo, .armInfo, .bodyInfo').removeClass("hoverOver")
