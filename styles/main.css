@@ -183,6 +183,9 @@ p {}
 }
 
 .playerPicture {
+    overflow-x: visible;
+    margin-left:40px;
+    margin-top: 40px;
     float: right;
     opacity: 0;
     background-size: contain;
@@ -220,10 +223,11 @@ p {}
 }
 
 .playerName2 {
+    overflow: none;
     display:none;
-    top: 85vh;
+    top:80vh;
     right: -100vw;
-    height: 23vh;
+    height: 18vh;
     width: 35vw;
     float: right;
     background-size: contain;
