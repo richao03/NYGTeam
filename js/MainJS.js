@@ -55,7 +55,7 @@ $('.remove').css({"height":0})
             } else if (playerSelected === "Apple") {
                 $('.playerPicture').css({ "background-position": "0 50px" })
             } else if (playerSelected === "Vernon") {
-                $('.playerPicture').css({ "background-position": "0px 0px ", "background-size":"550px auto" })
+                $('.playerPicture').css({ "background-position": "0px 40px" })
 
             } else {
                 $('.playerPicture').css({ "background-position": "" })
@@ -94,7 +94,7 @@ $('.remove').css({"height":0})
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "200px", "margin-top": "10px" })
+            $('.headInfo').css({ "margin-left": "170px", "margin-top": "10px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -104,26 +104,26 @@ $('.remove').css({"height":0})
                     //red line to text box
                     $('.headInfo').next('div')
                         .css({ "margin-left": "200px", "margin-top": "30px", "border-color": "red" })
-                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
+                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "420px", "height": "40px" })
                 },
                 //upon  mouse leave
                 function() {
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "-10px", "margin-top": "177px" })
+            $('.armInfo').css({ "margin-left": "-10px", "margin-top": "147px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "277px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "237px", "border-color": "red" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "160px" })
+            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "147px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -155,7 +155,7 @@ $('.remove').css({"height":0})
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "140px", "margin-top": "109px" })
+            $('.headInfo').css({ "margin-left": "140px", "margin-top": "89px" })
                 .addClass("hoverOver")
             $('.headInfo').off().hover(
                 function() {
@@ -186,14 +186,14 @@ $('.remove').css({"height":0})
                 });
 
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "210px", "margin-top": "430px" })
+            $('.bodyInfo').css({ "margin-left": "210px", "margin-top": "370px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
                     //starting position of red line to text box
                     $('.bodyInfo').next('div').css({ "margin-left": "320px", "margin-top": "140px", "z-index": "50", "border-color": "red" })
-                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "300px" })
+                        .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "250px" })
                 },
                 function() {
                     afterBodyHover();
@@ -232,7 +232,7 @@ $('.remove').css({"height":0})
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "35px", "margin-top": "189px" })
+            $('.armInfo').css({ "margin-left": "30px", "margin-top": "169px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
@@ -248,7 +248,7 @@ $('.remove').css({"height":0})
                 });
 
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "110px", "margin-top": "430px" })
+            $('.bodyInfo').css({ "margin-left": "90px", "margin-top": "400px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -283,7 +283,7 @@ $('.remove').css({"height":0})
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "160px", "margin-top": "37px" })
+            $('.headInfo').css({ "margin-left": "140px", "margin-top": "20px" })
                 .addClass("hoverOver")
             $('.headInfo').off().hover(
                 function() {
@@ -349,7 +349,7 @@ $('.remove').css({"height":0})
 
             //*******************Head Info STARTS*******************************
             //spinning red circle
-            $('.headInfo').css({ "margin-left": "230px", "margin-top": "30px" })
+            $('.headInfo').css({ "margin-left": "190px", "margin-top": "30px" })
                 .addClass("hoverOver")
                 //what happens when u hover over red circle
             $('.headInfo').off().hover(
@@ -366,24 +366,24 @@ $('.remove').css({"height":0})
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "270px", "margin-top": "230px" })
+            $('.armInfo').css({ "margin-left": "250px", "margin-top": "190px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
                     $('.armInfo').next('div').css({ "margin-left": "215px", "margin-top": "277px", "border-color": "red", "z-index": "1" })
-                        .animate({ "left": "-375px", "border-width": "2px", "width": "470px", "height": "40px" })
+                        .animate({ "left": "-375px", "border-width": "2px", "width": "430px", "height": "40px" })
                 },
                 function() {
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "100px", "margin-top": "450px" })
+            $('.bodyInfo').css({ "margin-left": "80px", "margin-top": "400px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "160px", "margin-top": "280px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "160px", "margin-top": "270px", "z-index": "50", "border-color": "red" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "350px", "height": "140px" })
                 },
                 function() {
@@ -462,7 +462,7 @@ $('.remove').css({"height":0})
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-            $('.playerPicture').css({ "margin-bottom": "15px" })
+
             $("#headText").html("2016 1st Round Draft Pick <br/>College: Ohio State")
             $("#armText").html("1 Career forced fumbles</br> 3 Career Pass Deflections</br> 15 Tackles")
             $("#bodyText").html("40-yd Dash: 4.40s</br>Vertical: 35 inches")
@@ -486,7 +486,7 @@ $('.remove').css({"height":0})
                     afterHeadHover();
                 });
             //******************* ARM Info STARTS*******************************
-            $('.armInfo').css({ "margin-left": "-30px", "margin-top": "307px" })
+            $('.armInfo').css({ "margin-left": "-30px", "margin-top": "280px" })
                 .addClass("hoverOver")
             $('.armInfo').off().hover(
                 function() {
@@ -498,7 +498,7 @@ $('.remove').css({"height":0})
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "100px", "margin-top": "560px" })
+            $('.bodyInfo').css({ "margin-left": "100px", "margin-top": "500px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
@@ -584,7 +584,7 @@ $('.remove').css({"height":0})
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-            $('.playerPicture').css({ "background-size": "100% auto", "margin-top": "40px" })
+
             $("#headText").html("2012 3rd Round Draft Pick <br/>College: Miami")
             $("#armText").html("30 Career Sacks</br> 4 Career Forced Fumbles</br> 213 Tackles")
             $("#bodyText").html("40-yd Dash: 4.64s</br>Vertical: 34.5 inches")
@@ -619,7 +619,7 @@ $('.remove').css({"height":0})
                     afterArmHover()
                 });
             //*******************body Info STARTS*******************************
-            $('.bodyInfo').css({ "margin-left": "290px", "margin-top": "427px" })
+            $('.bodyInfo').css({ "margin-left": "270px", "margin-top": "397px" })
                 .addClass("hoverOver")
             $('.bodyInfo').off().hover(
                 function() {
