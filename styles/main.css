@@ -134,13 +134,40 @@
 
 
 /*-------------------- 700 and down -------------------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
 
 
- #lineInfo .upLineInfo{
+.armInfo,
+.headInfo,
+.bodyInfo {
+   border-color:transparent!important;
+    display:none !important;
+ 
+}
 
-display:none!important;
- }   
+#lineInfo {
+    border-width: 0px;
+    position: absolute;
+    z-index: -20;
+    border-width: 0px;
+    border-bottom: solid transparent !important;
+    border-right: solid transparent !important;
+    -moz-transform: skew(-45deg, 0deg);
+    -webkit-transform: skew(-45deg, 0deg);
+    transform: skew(-45deg, 0deg);
+}
+
+.upLineInfo {
+    border-width: 0px;
+    position: relative;
+    z-index: -20;
+    border-width: 0px;
+    border-top: solid transparent!important;
+    border-right: solid transparent!important;
+    -moz-transform: skew(0deg, 0deg);
+    -webkit-transform: skew(0deg, 0deg);
+    transform: skew( 0deg, 0deg);
+}
 
 .textBox{
        -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
@@ -152,6 +179,7 @@ display:none!important;
     float:right !important;
     display:inline-block !important;
     z-index: 1000000 !important;
+    overflow:none;
 }
 .headTextBox{
            -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
@@ -166,18 +194,18 @@ display:none!important;
            -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
     -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
     transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
-
+overflow:none;
        display:inline-block !important;
 top:52vh !important;
-left:-15vw !important;
+left:-20vw !important;
 }
 .armTextBox{
            -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
     -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
     transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
        display:inline-block !important;
-top:200px;
-left:102vw !important;
+top:80vh;
+left:215vw !important;
 }
 
 
@@ -197,6 +225,7 @@ left:102vw !important;
 }
 
     .wholeScreen{
+        overflow:none;
     z-index: -100;
     position: absolute;
     top: 0;
