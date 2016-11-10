@@ -194,7 +194,7 @@
         transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
         display: inline-block !important;
         top: 80vh;
-        left: 210vw !important;
+        left: 205vw !important;
     }
     .playerPicture {
         z-index: 0!important;
