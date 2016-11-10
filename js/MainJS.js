@@ -97,7 +97,7 @@ $('.remove').css({"height":0})
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
             $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br>Total Touchdowns:302<")
+            $("#armText").html("Total Yards: 46,171 </br>Total Touchdowns:302")
             $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
 
             //*******************Head Info STARTS*******************************
