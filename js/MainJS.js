@@ -24,7 +24,9 @@ $('.remove').css({"height":0})
     var afterArmHover = function() {
         $("#armText").css("display", "none")
         $(".armTextBox").css({ "display": "none" })
-        $('.armInfo').next('div').animate({ "left": "0px", "border-width": "0px", "width": "0px", "height": "0px" })
+        $('.armInfo').next('div')
+        .css ({"display": "inline-block"})
+        .animate({ "left": "0px", "border-width": "0px", "width": "0px", "height": "0px" })
     }
 
     var headTextBoxFunc = function() {
@@ -34,7 +36,9 @@ $('.remove').css({"height":0})
     var afterHeadHover = function() {
         $("#headText").css("display", "none")
         $(".headTextBox").css({ "display": "none" })
-        $('.headInfo').next("div").animate({ "left": "0px", "border-width": "0px", "width": "0px", "height": "0px" })
+        $('.headInfo').next("div")
+        .css ({"display": "inline-block"})
+        .animate({ "left": "0px", "border-width": "0px", "width": "0px", "height": "0px" })
     }
 
     var bodyTextBoxFunc = function() {
@@ -45,7 +49,9 @@ $('.remove').css({"height":0})
     var afterBodyHover = function() {
         $("#bodyText").css("display", "none")
         $(".bodyTextBox").css({ "display": "none" })
-        $('.bodyInfo').next("div").animate({ "left": "0px", "border-width": "0px", "width": "0px", "height": "0px" })
+        $('.bodyInfo').next("div")        
+        .css ({"display": "inline-block"})
+        .animate({ "left": "0px", "border-width": "0px", "width": "0px", "height": "0px" })
     }
 
     var afterClick = function() {
@@ -91,7 +97,7 @@ $('.remove').css({"height":0})
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
             $("#headText").html("2004 1st Round 1st Pick <br/>College: Ole Miss <br/> Tied for all time 6th Highest QB Wonderlic Score")
-            $("#armText").html("Total Yards: 46,171 </br>Total Touchdowns:302")
+            $("#armText").html("Total Yards: 46,171 </br>Total Touchdowns:302<")
             $("#bodyText").html("Super Bowl XLII Champion </br> Super Bowl XLVI Champion</br> 2x Super Bowl MVP")
 
             //*******************Head Info STARTS*******************************
@@ -105,7 +111,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "200px", "margin-top": "30px" })
+                        .css({ "display": "inline-block","margin-left": "200px", "margin-top": "30px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "420px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -118,7 +124,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "237px" })
+                    $('.armInfo').next('div').css({ "display": "inline-block","margin-left": "50px", "margin-top": "237px" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -130,7 +136,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "130px", "margin-top": "100px", "z-index": "50" })
+                    $('.bodyInfo').next('div').css({ "display": "inline-block","margin-left": "130px", "margin-top": "100px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 function() {

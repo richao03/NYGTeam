@@ -340,7 +340,7 @@
 }
 
 .playerName {
-    display: none;
+    
     z-index: -100;
     top: -100vw;
     height: 100vh;
@@ -414,7 +414,7 @@ body {
 }
 
 #lineInfo {
-    border-width: 0px;
+    display:none;
     position: absolute;
     z-index: -20;
     border-width: 0px;
@@ -426,7 +426,7 @@ body {
 }
 
 .upLineInfo {
-    border-width: 0px;
+    display:none;
     position: absolute;
     z-index: -20;
     border-width: 0px;
