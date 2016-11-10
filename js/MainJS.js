@@ -84,7 +84,8 @@ $('.remove').css({"height":0})
         //*************************************************************************************************
         //------------------------------------------START OF ELI-------------------------------------------
         //*************************************************************************************************
-    $("#EliIcon").off().on('touchstart mousedown', function() {
+    $("#EliIcon").off().on('click touch', function() {
+        console.log("say something")
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
@@ -103,7 +104,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "200px", "margin-top": "30px", "border-color": "red" })
+                        .css({ "margin-left": "200px", "margin-top": "30px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "420px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -116,7 +117,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "237px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "237px" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -128,7 +129,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "130px", "margin-top": "100px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "130px", "margin-top": "100px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 function() {
@@ -162,7 +163,7 @@ $('.remove').css({"height":0})
                     //location of text box
                     headTextBoxFunc();
                     //beginning of Red line to text box
-                    $('.headInfo').next('div').css({ "margin-left": "160px", "margin-top": "110px", "border-color": "red", "z-index": "1" })
+                    $('.headInfo').next('div').css({ "margin-left": "160px", "margin-top": "110px", "z-index": "1" })
                         //animation and legnth of line to text box
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
@@ -177,7 +178,7 @@ $('.remove').css({"height":0})
                     //location of text box
                     armTextBoxFunc();
                     //starting position of red line to text box
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "77px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "77px" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -192,7 +193,7 @@ $('.remove').css({"height":0})
                 function() {
                     bodyTextBoxFunc();
                     //starting position of red line to text box
-                    $('.bodyInfo').next('div').css({ "margin-left": "320px", "margin-top": "140px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "320px", "margin-top": "140px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "250px" })
                 },
                 function() {
@@ -225,7 +226,7 @@ $('.remove').css({"height":0})
                     //location of text box
                     headTextBoxFunc();
                     //beginning of Red line to text box
-                    $('.headInfo').next('div').css({ "margin-left": "50px", "margin-top": "137px", "border-color": "red", "z-index": "1" })
+                    $('.headInfo').next('div').css({ "margin-left": "50px", "margin-top": "137px", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -239,7 +240,7 @@ $('.remove').css({"height":0})
                     //location of text box
                     armTextBoxFunc();
                     //starting position of red line to text box
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "277px", "border-color": "red", "z-index": "1" })
+                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "277px", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -254,7 +255,7 @@ $('.remove').css({"height":0})
                 function() {
                     bodyTextBoxFunc();
                     //starting position of red line to text box
-                    $('.bodyInfo').next('div').css({ "margin-left": "230px", "margin-top": "190px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "230px", "margin-top": "190px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "240px" })
                 },
                 function() {
@@ -290,7 +291,7 @@ $('.remove').css({"height":0})
                     //location of text box
                     headTextBoxFunc();
                     //beginning of Red line to text box
-                    $('.headInfo').next('div').css({ "margin-left": "180px", "margin-top": "87px", "border-color": "red", "z-index": "1" })
+                    $('.headInfo').next('div').css({ "margin-left": "180px", "margin-top": "87px", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -304,7 +305,7 @@ $('.remove').css({"height":0})
                     //location of text box
                     armTextBoxFunc();
                     //starting position of red line to text box
-                    $('.armInfo').next('div').css({ "margin-left": "100px", "margin-top": "277px", "border-color": "red", "z-index": "1" })
+                    $('.armInfo').next('div').css({ "margin-left": "100px", "margin-top": "277px", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -319,7 +320,7 @@ $('.remove').css({"height":0})
                 function() {
                     bodyTextBoxFunc();
                     //starting position of red line to text box
-                    $('.bodyInfo').next('div').css({ "margin-left": "130px", "margin-top": "250px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "130px", "margin-top": "250px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "140px" })
                 },
                 function() {
@@ -358,7 +359,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "200px", "margin-top": "30px", "border-color": "red" })
+                        .css({ "margin-left": "200px", "margin-top": "30px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -371,7 +372,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "215px", "margin-top": "277px", "border-color": "red", "z-index": "1" })
+                    $('.armInfo').next('div').css({ "margin-left": "215px", "margin-top": "277px", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "430px", "height": "40px" })
                 },
                 function() {
@@ -383,7 +384,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "160px", "margin-top": "270px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "160px", "margin-top": "270px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "350px", "height": "140px" })
                 },
                 function() {
@@ -418,7 +419,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "200px", "margin-top": "30px", "border-color": "red" })
+                        .css({ "margin-left": "200px", "margin-top": "30px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -431,7 +432,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "277px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "277px" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "40px" })
                 },
                 function() {
@@ -443,7 +444,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "120px", "margin-top": "180px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "120px", "margin-top": "180px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "300px", "height": "160px" })
                 },
                 function() {
@@ -478,7 +479,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "200px", "margin-top": "140px", "border-color": "red" })
+                        .css({ "margin-left": "200px", "margin-top": "140px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -491,7 +492,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "377px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "50px", "margin-top": "377px" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "350px", "height": "20px" })
                 },
                 function() {
@@ -503,7 +504,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "200px", "margin-top": "180px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "200px", "margin-top": "180px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "220px", "height": "340px" })
                 },
                 function() {
@@ -539,7 +540,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "200px", "margin-top": "180px", "border-color": "red" })
+                        .css({ "margin-left": "200px", "margin-top": "180px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "250px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -552,7 +553,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "250px", "margin-top": "327px", "border-color": "red", "z-index": "1" })
+                    $('.armInfo').next('div').css({ "margin-left": "250px", "margin-top": "327px", "z-index": "1" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "550px", "height": "40px" })
                 },
                 function() {
@@ -565,7 +566,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "120px", "margin-top": "180px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "120px", "margin-top": "180px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "350px", "height": "230px" })
                 },
                 function() {
@@ -599,7 +600,7 @@ $('.remove').css({"height":0})
                     headTextBoxFunc();
                     //red line to text box
                     $('.headInfo').next('div')
-                        .css({ "margin-left": "100px", "margin-top": "80px", "border-color": "red" })
+                        .css({ "margin-left": "100px", "margin-top": "80px" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 //upon  mouse leave
@@ -612,7 +613,7 @@ $('.remove').css({"height":0})
             $('.armInfo').off().hover(
                 function() {
                     armTextBoxFunc();
-                    $('.armInfo').next('div').css({ "margin-left": "120px", "margin-top": "277px", "border-color": "red" })
+                    $('.armInfo').next('div').css({ "margin-left": "120px", "margin-top": "277px" })
                         .animate({ "left": "-375px", "border-width": "2px", "width": "320px", "height": "40px" })
                 },
                 function() {
@@ -624,7 +625,7 @@ $('.remove').css({"height":0})
             $('.bodyInfo').off().hover(
                 function() {
                     bodyTextBoxFunc();
-                    $('.bodyInfo').next('div').css({ "margin-left": "330px", "margin-top": "380px", "z-index": "50", "border-color": "red" })
+                    $('.bodyInfo').next('div').css({ "margin-left": "330px", "margin-top": "380px", "z-index": "50" })
                         .animate({ "left": "-450px", "top": "50px", "border-width": "2px", "width": "450px", "height": "40px" })
                 },
                 function() {
