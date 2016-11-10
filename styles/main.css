@@ -135,6 +135,7 @@
         display: none !important;
     }
     #lineInfo {
+        display: inline-block !important;
         border-width: 0px;
         position: absolute;
         z-index: -20;
@@ -146,6 +147,7 @@
         transform: skew(-45deg, 0deg);
     }
     .upLineInfo {
+        display: inline-block !important;
         border-width: 0px;
         position: relative;
         z-index: -20;
@@ -157,6 +159,7 @@
         transform: skew( 0deg, 0deg);
     }
     .textBox {
+
         -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
         -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
         transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
