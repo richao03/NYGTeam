@@ -84,7 +84,7 @@ $('.remove').css({"height":0})
         //*************************************************************************************************
         //------------------------------------------START OF ELI-------------------------------------------
         //*************************************************************************************************
-    $("#EliIcon").off().on('click', function() {
+    $("#EliIcon").off().on('touchstart mousedown', function() {
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
