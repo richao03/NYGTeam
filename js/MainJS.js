@@ -52,7 +52,8 @@ $('.remove').css({"height":0})
         setTimeout(function() {
             if (playerSelected === "JPP") {
                 $('.playerPicture').css({ "background-position": "0 150px", "background-size":"550px auto"})
-            } else if (playerSelected === "Apple") {
+            } else 
+            if (playerSelected === "Apple") {
                 $('.playerPicture').css({ "background-position": "0 50px" })
             } else if (playerSelected === "Vernon") {
                 $('.playerPicture').css({ "background-position": "0px 40px" })
@@ -524,7 +525,7 @@ $('.remove').css({"height":0})
         firstClick(this.id)
         if (playerClicked == undefined || playerClicked !== playerSelected + "Icon") {
             afterClick()
-            $('.playerPicture').css({ "background-size": "100% auto", "margin-top": "50px" })
+            $('.playerPicture').css({ "background-size": "100% auto" })
             $("#headText").html("2010 1st Round Draft Pick <br/>College: South Florida<br/>Super Bowl XLVI Champion")
             $("#armText").html("44.5 Career Sacks</br> 9 Career Forced Fumbles</br> 340 Tackles")
             $("#bodyText").html("40-yd Dash: 4.78s</br>Vertical: 31.5 inches")

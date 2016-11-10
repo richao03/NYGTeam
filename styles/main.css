@@ -135,53 +135,49 @@
 
 /*-------------------- 700 and down -------------------*/
 @media screen and (max-width: 700px) {
-.headInfo
-.bodyInfo
-.armInfo{
-    margin-left:0!important;
 
 
-}
+ #lineInfo .upLineInfo{
 
- .lineInfo .upLineInfo{
-    border-width: 0px;
-    position: absolute;
-    z-index: -20;
-    border-width: 0px;
-    border-bottom: solid transparent;
-    border-right: solid transparent;
-    -moz-transform: skew(-45deg, 0deg) !important;
-    -webkit-transform: skew(-45deg, 0deg) !important;
-    transform: skew(-45deg, 0deg) !important;
-    display:inline-block!important;
-    right:0 !important;
+display:none!important;
  }   
 
 .textBox{
-  
-    transform: scale(0.7, 0.7);
+       -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    width:33vw !important;
+    border-color: transparent !important;
     position:relative!important;
     float:right !important;
     display:inline-block !important;
-    right:-100px;
     z-index: 1000000 !important;
 }
 .headTextBox{
-      right:-200px !important;
-      right:0 !important;
+           -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    top:52vh !important;
+      left:115vw !important;
        display:inline-block !important;
-top:0px;
+
 }
 .bodyTextBox{
-  right:-200 !important;
+           -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+
        display:inline-block !important;
-top:100px;
+top:52vh !important;
+left:-15vw !important;
 }
 .armTextBox{
-      right:-200px !important;
-       right:-600 !important;
+           -moz-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    -webkit-transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
+    transform: skew(0deg, 0deg) scale(0.8, 0.8)!important;
        display:inline-block !important;
 top:200px;
+left:102vw !important;
 }
 
 
@@ -189,12 +185,13 @@ top:200px;
     z-index: 0!important;
     float: left;
     top:0 !important;
+    margin-top: :0px !important;
     opacity: 0;
-    background-position: 10px 50px !important;
+    background-position: 30px 50px !important;
     background-size: contain !important;
     background-repeat: no-repeat;
-    height: 500px !important;
-    width: 300px !important;
+    height: 100vh !important;
+    width: 100vw !important;
     position: absolute;
     left: 0 !important;
 }
@@ -239,15 +236,37 @@ top:200px;
     }
 }
 
-.playerName {
-    right: -40vw;
-}
 
 .armInfo,
 .headInfo,
 .bodyInfo {
     display:none !important;
-    border-color": ""
+ 
+}
+
+.playerName {
+    display:inline-block !important;
+    z-index: -100;
+    top: 0vw;
+    height: 100vh;
+    width: 14vw;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.playerName2 {
+    overflow: inline-block;
+    display:none;
+    top:80vh;
+    left: 0vw !important;
+    top: 0vh !important;
+    width: 35vw;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 }
@@ -400,8 +419,8 @@ body {
     position: absolute;
     z-index: -20;
     border-width: 0px;
-    border-bottom: solid transparent;
-    border-right: solid transparent;
+    border-bottom: solid red;
+    border-right: solid red;
     -moz-transform: skew(-45deg, 0deg);
     -webkit-transform: skew(-45deg, 0deg);
     transform: skew(-45deg, 0deg);
@@ -412,8 +431,8 @@ body {
     position: absolute;
     z-index: -20;
     border-width: 0px;
-    border-top: solid transparent;
-    border-right: solid transparent;
+    border-top: solid red;
+    border-right: solid red;
     -moz-transform: skew(45deg, 0deg);
     -webkit-transform: skew(45deg, 0deg);
     transform: skew( 45deg, 0deg);
